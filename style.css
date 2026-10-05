@@ -1,0 +1,124 @@
+/* Завдання 2: шестерня тільки засобами CSS */
+
+.gear1,
+.gear2 {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 220px;
+    height: 220px;
+    margin: 60px;
+    border-radius: 50%;
+    background-color: #a6a6a6;
+}
+
+.gear1 .notch,
+.gear2 .notch {
+    position: absolute;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-color: #ffffff;
+}
+
+.gear1 .hole,
+.gear2 .hole {
+    position: absolute;
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    background-color: #ffffff;
+}
+
+/* 1. position */
+
+.gear1 .hole {
+    left: 67.5px;
+    top: 67.5px;
+}
+
+.gear1 .n1 {
+    left: 82px;
+    top: -31px;
+}
+
+.gear1 .n2 {
+    left: 161.9px;
+    top: 2.1px;
+}
+
+.gear1 .n3 {
+    left: 195px;
+    top: 82px;
+}
+
+.gear1 .n4 {
+    left: 161.9px;
+    top: 161.9px;
+}
+
+.gear1 .n5 {
+    left: 82px;
+    top: 195px;
+}
+
+.gear1 .n6 {
+    left: 2.1px;
+    top: 161.9px;
+}
+
+.gear1 .n7 {
+    left: -31px;
+    top: 82px;
+}
+
+.gear1 .n8 {
+    left: 2.1px;
+    top: 2.1px;
+}
+
+/* 2. transform */
+
+.gear2 .hole {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.gear2 .notch {
+    left: 82px;
+    top: -31px;
+    transform-origin: 28px 141px;
+}
+
+.gear2 .n1 {
+    transform: rotate(0deg);
+}
+
+.gear2 .n2 {
+    transform: rotate(45deg);
+}
+
+.gear2 .n3 {
+    transform: rotate(90deg);
+}
+
+.gear2 .n4 {
+    transform: rotate(135deg);
+}
+
+.gear2 .n5 {
+    transform: rotate(180deg);
+}
+
+.gear2 .n6 {
+    transform: rotate(225deg);
+}
+
+.gear2 .n7 {
+    transform: rotate(270deg);
+}
+
+.gear2 .n8 {
+    transform: rotate(315deg);
+}

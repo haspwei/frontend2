@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Майко Надія Олександрівна, група ІП-41, лабораторна робота №2, варіант 10</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Завдання 1: кольори рядків (nn = 10) */
+        tr.row1 td { background-color: #108f8f; color: #000000; }
+        tr.row2 td { background-color: #f5f510; color: #000000; }
+
+        /* При наведенні курсора кольори змінюються на протилежні */
+        tr.row1:hover td { background-color: #ef7070; color: #000000; }
+        tr.row2:hover td { background-color: #0a0aef; color: #ffffff; }
+
+        td { height: 40px; }
+
+        /* Ширина стовпців */
+        tr.row1 td:nth-child(1) { width: 80px; }
+        tr.row1 td:nth-child(2) { width: 80px; }
+        tr.row1 td:nth-child(3) { width: 160px; }
+        tr.row1 td:nth-child(4) { width: 160px; }
+        tr.row1 td:nth-child(5) { width: 160px; }
+    </style>
+</head>
+<body>
+
+    <!-- Завдання 1: таблиця -->
+    <table border="1">
+        <tr class="row1">
+            <td></td>
+            <td></td>
+            <td rowspan="2">Майко</td>
+            <td>Надія</td>
+            <td rowspan="2">Олександрівна</td>
+        </tr>
+        <tr class="row2">
+            <td colspan="2">ІП-41</td>
+            <td>ЛР-2 Варіант 10</td>
+        </tr>
+        <tr>
+            <td colspan="2"></td>
+            <td colspan="3"></td>
+        </tr>
+    </table>
+
+    <!-- Завдання 2: зображення -->
+    <!-- 1. за допомогою position -->
+    <div class="gear1">
+        <div class="hole"></div>
+        <div class="notch n1"></div>
+        <div class="notch n2"></div>
+        <div class="notch n3"></div>
+        <div class="notch n4"></div>
+        <div class="notch n5"></div>
+        <div class="notch n6"></div>
+        <div class="notch n7"></div>
+        <div class="notch n8"></div>
+    </div>
+
+    <!-- 2. за допомогою transform -->
+    <div class="gear2">
+        <div class="hole"></div>
+        <div class="notch n1"></div>
+        <div class="notch n2"></div>
+        <div class="notch n3"></div>
+        <div class="notch n4"></div>
+        <div class="notch n5"></div>
+        <div class="notch n6"></div>
+        <div class="notch n7"></div>
+        <div class="notch n8"></div>
+    </div>
+
+</body>
+</html>
